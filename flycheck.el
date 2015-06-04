@@ -6232,7 +6232,7 @@ pragma.  Each extension is enabled via `-X'."
   "A Haskell syntax and type checker using ghc.
 
 See URL `http://www.haskell.org/ghc/'."
-  :command ("ghc" "-Wall" "-fno-code"
+  :command ("ghc" "-Wall" "-no-link" "-outputdir" "/tmp/flycheck-haskell"
             (option-flag "-no-user-package-db"
                          flycheck-ghc-no-user-package-database)
             (option-list "-package-db" flycheck-ghc-package-databases)
