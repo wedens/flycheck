@@ -6278,7 +6278,7 @@ See URL `http://www.haskell.org/ghc/'."
   "A Haskell style checker using hlint.
 
 See URL `https://github.com/ndmitchell/hlint'."
-  :command ("hlint" source-inplace)
+  :command ("hlint" "-XQuasiQuotes" "-XTemplateHaskell" "-hGeneralise" "-hDefault" "-hDollar" source-inplace)
   :error-patterns
   ((warning line-start
             (file-name) ":" line ":" column
